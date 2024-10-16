@@ -1,0 +1,40 @@
+{
+  "name": "sos2223-13",
+  "version": "0.0.0",
+  "description": "Grupo SOS 2022-2023 ID-13\r This is a new project",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index",
+    "test-evolution-stats": "npx newman run ./tests/luimargon3.json -e ./tests/env/luimargon3_localhost.json",
+    "test-employment-stats": "npx newman run ./tests/joslopber.json -e ./tests/env/joslopber_localhost.json",
+    "test-localentities-stats": "npx newman run ./tests/ireferrom.json -e ./tests/env/ireferrom_localhost.json",
+    "test": "npm run test-evolution-stats && npm run test-employment-stats && npm run test-localentities-stats"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gti-sos/SOS2223-13.git"
+  },
+  "author": "luimargon3,joslopber,ireferrom",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gti-sos/SOS2223-13/issues"
+  },
+  "homepage": "https://github.com/gti-sos/SOS2223-13#readme",
+  "dependencies": {
+    "all": "^0.0.0",
+    "axios": "^1.4.0",
+    "body-parser": "^1.20.2",
+    "chart.js": "^4.3.0",
+    "cool-ascii-faces": "^1.3.4",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "jwt-simple": "^0.5.6",
+    "nedb": "^1.8.0",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.33.0"
+  }
+}
